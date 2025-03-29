@@ -11,7 +11,6 @@ export default function App() {
     ReemKufiFun: ReemKufiFun,
   });
 
-  console.log(isFontLoaded);
   return (
     <ImageBackground source={bgImgSummer} style={s.imgBg} imageStyle={s.img}>
       <SafeAreaProvider>

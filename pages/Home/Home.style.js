@@ -6,12 +6,11 @@ export const s = StyleSheet.create({
     color: "#f1f1f1",
   },
   meteoBasic: { flex: 2, color: "#f1f1f1" },
-  searchBar: { flex: 2, backgroundColor: "#bbb" },
+  searchBar: { flex: 2, backgroundColor: "#bbb", opacity: 0.5 },
   meteoAdvanced: { flex: 1 },
-  text:{
-    fontSize:50,
-    fontFamily:"ReemKufiFun",
-    color:"white",
-
-  }
+  text: {
+    fontSize: 50,
+    fontFamily: "ReemKufiFun",
+    color: "white",
+  },
 });

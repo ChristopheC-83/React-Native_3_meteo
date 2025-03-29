@@ -4,6 +4,8 @@ export const s = StyleSheet.create({
   container: {
     flex: 1,
     color : "white",
+    paddingHorizontal:20,
+    paddingVertical: 10,
   },
   imgBg: {
     flex: 1,

@@ -5,3 +5,11 @@ export async function fetchWeatherFromCoords(coords) {
   const data = await response.json();
   return data;
 }
+
+export async function fetchCityFromCoords(coords) {
+  const url = `https://nominatim.openstreetmap.org/reverse?format=json&lat=43.78&lon=41.199`;
+  const response = await fetch(url);
+  const data = await response.json();
+  console.log(data)
+  return city || village || town;
+}
