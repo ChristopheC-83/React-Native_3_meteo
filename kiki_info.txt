@@ -1,4 +1,5 @@
 Pour lancer le projet de base en jsx
+=>CREATION PROJET
 npx create-expo-app nom_projet --template blank
 
 on entre de dans le projet
@@ -18,10 +19,12 @@ dans terminal, on appuie sur la touche "a"
 si plantage
 ConfigError: Cannot resolve entry file: The `main` field defined in your `package.json` points to an unresolvable or non-existent path
 dans package.json
+=> SINON CA PLANTE
 "main": "node_modules/expo/AppEntry.js",
 
 
 si l'app se déplace dans la barre d'horlage, en haut de l'ecran, on installe
+=>POUR RESTER DANS LA ZONE D'AFFICHAGE
 npm install react-native-safe-area-context
 
 
@@ -29,6 +32,17 @@ style en ligne dans le jsx, en dessous le composant ou dans un fichier.js à par
 
 Par defaut les composants sont display:flex et flex-direction : column
 
+=> GENERATEUR D'ID
 UUID :  npm i react-native-uuid
 
 Async Storage (local storage) :npm i @react-native-async-storage/async-storage
+
+=> POUR LA LOCATION
+npx expo install expo-location
+
+=> POUR LES POLICES
+npx expo install expo-font
+on met fichier .ttf dans le dossier assets/fonts
+on importe la police dans le fichier App.js
+import * as Font from 'expo-font';
+import { useFonts } from 'expo-font';
