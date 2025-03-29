@@ -1,0 +1,8 @@
+Mon texte en display block
+<Text>mon texte ici</Text>
+
+<View>
+englobe les éléments enfants
+
+img chaude : https://images.unsplash.com/photo-1610179370434-797be964d74c?q=80&w=2574&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
+img froide : https://images.unsplash.com/photo-1705667831122-59f1076bb866?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D

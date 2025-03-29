@@ -1,0 +1,34 @@
+Pour lancer le projet de base en jsx
+npx create-expo-app nom_projet --template blank
+
+on entre de dans le projet
+cd nom_projet
+code .
+
+on lance 
+npx expo start
+
+Avec smartphone, on lance l'appli expogo
+on scan qr code 
+Avec emulateur android, on le lance avec android studio
+puis dans le vscode du projet
+dans terminal, on appuie sur la touche "a"
+
+
+si plantage
+ConfigError: Cannot resolve entry file: The `main` field defined in your `package.json` points to an unresolvable or non-existent path
+dans package.json
+"main": "node_modules/expo/AppEntry.js",
+
+
+si l'app se déplace dans la barre d'horlage, en haut de l'ecran, on installe
+npm install react-native-safe-area-context
+
+
+style en ligne dans le jsx, en dessous le composant ou dans un fichier.js à part
+
+Par defaut les composants sont display:flex et flex-direction : column
+
+UUID :  npm i react-native-uuid
+
+Async Storage (local storage) :npm i @react-native-async-storage/async-storage
