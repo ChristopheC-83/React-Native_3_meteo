@@ -9,6 +9,7 @@ import { fetchCityFromCoords, fetchWeatherFromCoords } from "../../api/meteo";
 import Txt from "../../components/Txt";
 import MeteoBasic from "./components/MetoBasic/MeteoBasic";
 import { getWeatherInterpretation } from "../../services/meteo.service";
+import MeteoAdvanced from "./components/MeteoAdvanced/MeteoAdvanced";
 
 export default function Home() {
   const [coords, setCoords] = useState();
@@ -35,12 +36,13 @@ export default function Home() {
 
   async function fetchWeather() {
     const weatherResponse = await fetchWeatherFromCoords(coords);
+    // console.log(coords)
     setWeather(weatherResponse);
   }
 
   async function fetchCity() {
     const cityResponse = await fetchCityFromCoords(coords);
-    console.log("city : ",cityResponse);
+    // console.log("city : ",cityResponse);
     setCity(cityResponse);
   }
 
@@ -52,7 +54,7 @@ export default function Home() {
     if (coords) {
       fetchWeather();
       fetchCity()
-      console.log(city)
+      console.log(weather)
     }
   }, [coords]);
 
@@ -70,7 +72,7 @@ export default function Home() {
         <Text>search </Text>
       </View>
       <View style={s.meteoAdvanced}>
-        <Text>advanced</Text>
+        <MeteoAdvanced dusk={weather.daily.sunrise[0].split("T")[1]} dawn={weather.daily.sunset[0].split("T")[1]} wind={currentWeather.windspeed}/>
       </View>
     </View>
   ) : null;
