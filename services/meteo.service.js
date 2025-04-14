@@ -11,7 +11,7 @@ export const WEATHER_INTERPRATIONS = [
     },
     {
       codes: [
-        51, 53, 55, 56, 57, 61, 63, 65, 66, 67, 80, 81, 82, 85, 86,
+        95,51, 53, 55, 56, 57, 61, 63, 65, 66, 67, 80, 81, 82, 85, 86,
       ],
       label: "Pluvieux",
       image: require("../assets/images/meteo_img/rain.png"),
