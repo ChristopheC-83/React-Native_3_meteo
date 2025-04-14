@@ -7,6 +7,7 @@ import ReemKufiFun from "./assets/fonts/ReemKufiFun.ttf";
 import { useFonts } from "expo-font";
 import { NavigationContainer, StackRouter } from "@react-navigation/native";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
+import Forecast from "./pages/Forecast/Forecast";
 
 const Stack = createNativeStackNavigator();
 const navTheme={
@@ -22,20 +23,16 @@ export default function App() {
 
   return (
     <NavigationContainer theme={navTheme}>
-      <ImageBackground source={bgImgSummer} style={s.imgBg} imageStyle={s.img}>
-        <SafeAreaProvider>
-          <SafeAreaView style={s.container}>
+      
             {isFontLoaded ? (
               <Stack.Navigator
                 initialRouteName="Home"
-                screenOptions={{ headerShown: false }}
+                screenOptions={{animation:"fade", headerShown: false }}
               >
                 <Stack.Screen name="Home" component={Home} />
+                <Stack.Screen name="Forecast" component={Forecast} />
               </Stack.Navigator>
             ) : null}
-          </SafeAreaView>
-        </SafeAreaProvider>
-      </ImageBackground>
     </NavigationContainer>
   );
 }
